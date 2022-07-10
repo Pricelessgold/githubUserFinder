@@ -29,7 +29,7 @@ function getRepos(username) {
   fetch('https://api.github.com/users/' + username + '/repos')
     .then(response => response.json())
     .then(data => {
-      for (i = 0; i < data.length; i++) {
+      for (i = 0; i < data.length; i++) { //Loops through the retrieved repolist and start assigning them to the HTML elements
         info += '<tr>';
         info += '<td> <a target="_blank" title=" Description:  ' + data[i].description + ' ___Last Update: ' + data[i].updated_at + ' " href="' + data[i].html_url + '">' + data[i].name + '</a>' + '</td>';
         info += '<td>' + data[i].language + '</td>';
