@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> 
+         Github User Finder
+      </title>
+      <script src ="script.js"></script>
+      <link rel="stylesheet" href="style.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+   </head>
+   <body>
+   
+
+         <div id="searchDiv" >
+            <h1 class="title"> Github User Finder App</h1>
+            <input id="username" value="raznerdeveloper" type="text" placeholder="Enter a Github username"> 
+            
+            <br>
+            <button id="button" onclick="getUserProfile();">Search</button>
+         </div>
+         
+
+         <div class="container"> 
+        
+           
+         <div id="profileDiv" >
+            <h1 id="profileTitle"> Profile </h1>
+            <img id="avatar_url" style="width: 30%; border-radius: 40%;" />
+            <p id="name" ></p>
+            <p id="bio"></p>
+            <p id="location"></p>
+            <p id="repos"></p>
+            <a href id="url"> </a>
+            
+         </div>
+
+
+         <div >
+            <h1 id="title"> Profile </h1>
+            
+               <table class="repoDiv">
+                 <thead>
+                   <tr>
+                     
+                     <th>Name</th>
+                    <th>Language</th>
+                     
+                    
+                   </tr>
+                 </thead>
+                 <tbody id="tableBody">
+                   
+                 </tbody>
+               </table>
+             
+            
+         </div>
+         
+
+      </div>
+
+   </body>
+</html>
