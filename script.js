@@ -35,6 +35,6 @@ function getRepos(username) {
         info += '<td>' + data[i].language + '</td>';
         info += '</tr>';
       }
-      $('#tableBody').html(info);
+      document.getElementById("tableBody").innerHTML=info
     })
 }
